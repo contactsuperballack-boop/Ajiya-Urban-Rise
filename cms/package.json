@@ -1,0 +1,42 @@
+{
+  "name": "ajiya-cms",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AJIYA Urban Rise content layer — Strapi v5 (Projects, Properties, Services, Insights, Team Members).",
+  "scripts": {
+    "develop": "strapi develop",
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "seed": "ts-node --transpile-only scripts/seed.ts",
+    "seed:dry-run": "ts-node --transpile-only scripts/seed.ts --dry-run",
+    "validate-seed-data": "node scripts/validate-seed-data.js",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+  },
+  "dependencies": {
+    "@strapi/strapi": "^5.13.0",
+    "@strapi/plugin-users-permissions": "^5.13.0",
+    "@strapi/plugin-cloud": "^5.13.0",
+    "pg": "^8.16.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "better-sqlite3": "^11.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "@types/node": "^24.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "ajiya-cms"
+  },
+  "license": "MIT"
+}

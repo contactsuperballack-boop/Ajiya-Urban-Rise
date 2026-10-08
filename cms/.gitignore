@@ -1,0 +1,11 @@
+node_modules/
+.cache/
+.tmp/
+dist/
+build/
+.env
+license.txt
+exports/
+*.cache
+.strapi-updater.json
+.DS_Store

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "insights",
+  "info": {
+    "singularName": "insight",
+    "pluralName": "insights",
+    "displayName": "Insight",
+    "description": "Editorial articles for the Insights hub — market, investment, land, construction, company news."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["Real Estate", "Investment", "Land", "Construction", "Market Insights", "Company News", "Project Updates", "60 Seconds with the CEO"],
+      "required": true
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true,
+      "maxLength": 220
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "readTime": {
+      "type": "string",
+      "description": "Display string, e.g. \"4 min read\""
+    },
+    "publishDate": {
+      "type": "date",
+      "required": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Featured article shown at the top of the Insights hub"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "videoUrl": {
+      "type": "string",
+      "description": "YouTube/Vimeo (or other embeddable) URL — when set, the article page embeds this video near the top instead of/alongside the written body. Used for the \"60 Seconds with the CEO\" series."
+    }
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "services": [
+    {
+      "index": "01",
+      "title": "Real Estate Development",
+      "slug": "development",
+      "cue": "Opportunity → place",
+      "shortDescription": "From land opportunity to considered urban place, we plan, shape, and deliver developments built for lasting value.",
+      "intro": "Building places that carry opportunity forward.",
+      "body": "AJIYA looks at development as a connected journey: discovering the right opportunity, understanding the context, planning with intention, and shaping a place that can create lasting value for the people who use it.",
+      "points": [
+        "Opportunity-led site thinking",
+        "Context-aware planning",
+        "Long-term value creation"
+      ],
+      "sortOrder": 1
+    },
+    {
+      "index": "02",
+      "title": "Property Sales",
+      "slug": "sales",
+      "cue": "Find your footing",
+      "shortDescription": "Clear guidance for buyers exploring land, homes, and residential opportunities across Abuja's evolving landscape.",
+      "intro": "A clearer way to move toward the right property.",
+      "body": "Buying land or a home is a meaningful step. Our role is to make the opportunity easier to understand, from the location and development story to the practical next conversation.",
+      "points": [
+        "Land and residential guidance",
+        "Clear project context",
+        "A human route to enquiry"
+      ],
+      "sortOrder": 2
+    },
+    {
+      "index": "03",
+      "title": "Real Estate Investment",
+      "slug": "investment",
+      "cue": "Think in horizons",
+      "shortDescription": "A long-term view of property and land investment, grounded in location, potential, and the work behind value.",
+      "intro": "See beyond the transaction. Think in horizons.",
+      "body": "We believe real estate investment deserves a patient, informed view. AJIYA brings together location, development potential, and a grounded understanding of the work required to build value over time.",
+      "points": [
+        "Long-term perspective",
+        "Land and property opportunities",
+        "Conversations built on clarity"
+      ],
+      "sortOrder": 3
+    },
+    {
+      "index": "04",
+      "title": "Property Management",
+      "slug": "management",
+      "cue": "Value, maintained",
+      "shortDescription": "Practical support that helps property assets remain cared for, useful, and positioned for the next chapter.",
+      "intro": "Keep the value of a place in motion.",
+      "body": "Property value is shaped by what happens after handover. Our management approach supports the care, usefulness, and continuity that help an asset serve its owners and occupants well.",
+      "points": [
+        "Asset care and coordination",
+        "Occupant-aware support",
+        "Practical continuity"
+      ],
+      "sortOrder": 4
+    },
+    {
+      "index": "05",
+      "title": "Construction",
+      "slug": "construction",
+      "cue": "Make the plan real",
+      "shortDescription": "Development expertise translated into disciplined delivery, from the first line on a plan to the built environment.",
+      "intro": "Make the plan real, with discipline.",
+      "body": "Construction is where ambition meets detail. AJIYA brings a development mindset to delivery, keeping the focus on clarity, craft, and the built outcome that people will experience every day.",
+      "points": [
+        "Delivery-minded thinking",
+        "Material and site discipline",
+        "Built-form expertise"
+      ],
+      "sortOrder": 5
+    }
+  ],
+  "projects": [
+    {
+      "name": "AJIYA Signature Estate",
+      "slug": "signature-estate",
+      "number": "01",
+      "type": "Residential",
+      "status": "Construction",
+      "location": "Kubwa, Abuja",
+      "eyebrow": "Where vision meets value",
+      "description": "A residential development story shaped around belonging, access, and the quiet confidence of a place built to last.",
+      "heroImagePlaceholder": "ajiya-signature-estate.jpg",
+      "sortOrder": 1,
+      "seoDescription": "AJIYA Signature Estate is a residential development in Kubwa, Abuja, built for lasting value and belonging.",
+      "documentationStatus": "FCDA Approved · Right of Occupancy (RofO)",
+      "units": [
+        {
+          "type": "Semi detached",
+          "size": "250sqm",
+          "price": "₦20m"
+        }
+      ]
+    },
+    {
+      "name": "Urban Rise Estate",
+      "slug": "urban-rise-estate",
+      "number": "02",
+      "type": "Mixed-Use",
+      "status": "Construction",
+      "location": "Kuje, Abuja",
+      "eyebrow": "A wider view of growth",
+      "description": "An emerging urban vision that connects land, infrastructure, and community into a stronger future for the city.",
+      "heroImagePlaceholder": "ajiya-urban-rise-estate.jpg",
+      "sortOrder": 2,
+      "seoDescription": "Urban Rise Estate is a masterplanned community in Abuja's growth corridor, connecting land, infrastructure, and community.",
+      "documentationStatus": "FCDA Approved · Right of Occupancy (RofO)",
+      "units": [
+        {
+          "type": "Semi detached",
+          "size": "300sqm",
+          "price": "₦4.5m"
+        },
+        {
+          "type": "Terrace Duplex",
+          "size": "250sqm",
+          "price": "₦3.5m"
+        },
+        {
+          "type": "Fully detached duplex",
+          "size": "600sqm",
+          "price": "₦9m"
+        },
+        {
+          "type": "Semi detached bungalow",
+          "size": "300sqm",
+          "price": "₦4.5m"
+        }
+      ]
+    },
+    {
+      "name": "Golden Valley Estate",
+      "slug": "golden-valley-estate",
+      "number": "03",
+      "type": "Residential",
+      "status": "Construction",
+      "location": "Kurudu, Abuja",
+      "eyebrow": "A place to grow into",
+      "description": "Golden Valley Estate brings a considered mix of family homes and flats to Kurudu — from fully detached five-bedroom houses to compact two-bedroom flats, each built with the same attention to quality and documentation.",
+      "heroImagePlaceholder": "ajiya-golden-valley-estate.jpg",
+      "sortOrder": 3,
+      "documentationStatus": "FCDA Approved · Right of Occupancy (RofO)",
+      "units": [
+        {
+          "type": "Fully detached (5 bedrooms with BQ)",
+          "size": "500sqm",
+          "price": "₦15m"
+        },
+        {
+          "type": "Semi detached (4 bedrooms with BQ)",
+          "size": "300sqm",
+          "price": "₦12m"
+        },
+        {
+          "type": "Terraces (3 bedrooms with BQ)",
+          "size": "180sqm",
+          "price": "₦7.8m"
+        },
+        {
+          "type": "Block of Flats (2 bedrooms)",
+          "price": "₦55m"
+        },
+        {
+          "type": "Block of Flats (3 bedrooms)",
+          "price": "₦66m"
+        }
+      ],
+      "seoDescription": "Golden Valley Estate, Kurudu — fully detached, semi-detached, terrace, and flat options from AJIYA Urban Rise. FCDA approved with RofO."
+    },
+    {
+      "name": "Khadija Residence",
+      "slug": "khadija-residence",
+      "number": "04",
+      "type": "Residential",
+      "status": "Construction",
+      "location": "Lugbe, Abuja",
+      "eyebrow": "A quieter kind of arrival",
+      "description": "Khadija Residence offers terrace living and a signature penthouse option in Lugbe — close to the airport corridor, built for people who want both convenience and calm.",
+      "heroImagePlaceholder": "ajiya-khadija-residence.jpg",
+      "sortOrder": 4,
+      "documentationStatus": "FCDA Approved · Right of Occupancy (RofO)",
+      "units": [
+        {
+          "type": "Terrace",
+          "size": "250sqm",
+          "price": "₦10m"
+        },
+        {
+          "type": "Fully detached penthouse",
+          "size": "550sqm",
+          "price": "₦19m"
+        }
+      ],
+      "seoDescription": "Khadija Residence, Lugbe — terrace and penthouse living from AJIYA Urban Rise. FCDA approved with RofO."
+    }
+  ],
+  "properties": [
+    {
+      "name": "Land opportunities",
+      "slug": "land-opportunities",
+      "category": "Land",
+      "location": "Kubwa and Abuja growth corridors",
+      "priceGuide": 5,
+      "description": "A focused conversation around land, location context, and the next step toward ownership.",
+      "features": [
+        "Land",
+        "Investment",
+        "Growth corridor"
+      ],
+      "imagePlaceholder": "ajiya-land.jpg",
+      "projectSlug": null,
+      "availabilityStatus": "Available"
+    },
+    {
+      "name": "Residential opportunities",
+      "slug": "residential-opportunities",
+      "category": "Residential",
+      "location": "Selected Abuja communities",
+      "priceGuide": 15,
+      "description": "Explore homes and residential communities with a clear view of the place, the people, and the possibilities.",
+      "features": [
+        "Residential",
+        "First-time buyers",
+        "Community"
+      ],
+      "imagePlaceholder": "ajiya-residential.jpg",
+      "projectSlug": "signature-estate",
+      "availabilityStatus": "Available"
+    },
+    {
+      "name": "Commercial opportunities",
+      "slug": "commercial-opportunities",
+      "category": "Commercial",
+      "location": "Strategic urban locations",
+      "priceGuide": 35,
+      "description": "Discuss property opportunities that support the way Abuja works, grows, and connects over time.",
+      "features": [
+        "Commercial",
+        "Development",
+        "Long-term value"
+      ],
+      "imagePlaceholder": "ajiya-commercial.jpg",
+      "projectSlug": null,
+      "availabilityStatus": "Available"
+    },
+    {
+      "name": "Investment conversations",
+      "slug": "investment-conversations",
+      "category": "Investment",
+      "location": "Abuja, Nigeria",
+      "priceGuide": 25,
+      "description": "Start a considered conversation about property and land investment with the context in the room.",
+      "features": [
+        "Investment",
+        "Land",
+        "Long-term value"
+      ],
+      "imagePlaceholder": "ajiya-investment.jpg",
+      "projectSlug": null,
+      "availabilityStatus": "Available"
+    }
+  ],
+  "insights": [
+    {
+      "title": "Why the strongest property decisions begin with context",
+      "slug": "why-context-matters",
+      "category": "Real Estate",
+      "excerpt": "A clear view of location, use, and the story behind a development can make a considered decision feel simpler.",
+      "body": "Real-estate decisions become more useful when they start with a better question: what is this place becoming, and how can the opportunity inside it be understood clearly? In a growing city, the visible part of property is only one layer. There is the land itself, the connections around it, the planning that gives it purpose, and the people whose lives will make it meaningful.",
+      "readTime": "4 min read",
+      "publishDate": "2026-01-15",
+      "author": "AJIYA Urban Rise",
+      "featured": true
+    },
+    {
+      "title": "Land, patience, and the work behind lasting value",
+      "slug": "land-patience-lasting-value",
+      "category": "Investment",
+      "excerpt": "Property is not only about what exists today. It is also about what a place is becoming and how you participate in that change.",
+      "body": "Property is not only about what exists today. It is also about what a place is becoming and how you participate in that change. AJIYA's approach to investment starts with location context and a patient view of the horizon.",
+      "readTime": "5 min read",
+      "publishDate": "2026-01-08",
+      "author": "AJIYA Urban Rise",
+      "featured": false
+    },
+    {
+      "title": "From a line on a plan to a place people can call home",
+      "slug": "line-on-a-plan-to-home",
+      "category": "Project Updates",
+      "excerpt": "Development is a sequence of decisions. The right ones create more than buildings; they create confidence in the future.",
+      "body": "Development is a sequence of decisions. The right ones create more than buildings; they create confidence in the future. This is the story of how AJIYA moves from opportunity to place.",
+      "readTime": "3 min read",
+      "publishDate": "2025-12-20",
+      "author": "AJIYA Urban Rise",
+      "featured": false
+    },
+    {
+      "title": "60 Seconds with the CEO: Getting Started",
+      "slug": "60-seconds-with-the-ceo-getting-started",
+      "category": "60 Seconds with the CEO",
+      "excerpt": "A short, recurring video check-in with Rabiu Sa'idu Ajiya, Managing Director/CEO of AJIYA Urban Rise. First edition coming soon.",
+      "body": "“60 Seconds with the CEO” is a short, recurring video segment where Rabiu Sa'idu Ajiya, Managing Director/CEO of AJIYA Urban Rise, answers quick questions about the company, real estate in Abuja, and what's next.\n\nThe first edition is coming soon.",
+      "readTime": "1 min watch",
+      "publishDate": "2026-01-15",
+      "author": "AJIYA Urban Rise",
+      "featured": false,
+      "coverImagePlaceholder": "rabiu-saidu-ajiya.jpg"
+    }
+  ],
+  "teamMembers": [
+    {
+      "name": "Rabiu Sa'idu Ajiya",
+      "role": "Managing Director / CEO",
+      "note": "Leadership, vision, and the long view of urban opportunity.",
+      "verified": true,
+      "sortOrder": 1,
+      "photoPlaceholder": "rabiu-saidu-ajiya.jpg"
+    },
+    {
+      "name": "Development team",
+      "role": "Place & development",
+      "note": "Turning land, context, and possibility into considered places.",
+      "verified": false,
+      "sortOrder": 2
+    },
+    {
+      "name": "Client advisory team",
+      "role": "Property & investment",
+      "note": "Making the next property conversation clear and human.",
+      "verified": false,
+      "sortOrder": 3
+    },
+    {
+      "name": "Project delivery team",
+      "role": "Construction & management",
+      "note": "Keeping the work behind lasting value in motion.",
+      "verified": false,
+      "sortOrder": 4
+    },
+    {
+      "name": "Abdulaziz Pitiko",
+      "role": "Legal Advisor",
+      "note": "Guiding documentation, title, and compliance so every transaction stands on solid ground.",
+      "verified": true,
+      "sortOrder": 5,
+      "photoPlaceholder": "abdulaziz-pitiko.jpg"
+    },
+    {
+      "name": "Zainab Ahmad Abba",
+      "role": "PR Department",
+      "note": "Shaping how AJIYA Urban Rise shows up and connects, from press to community.",
+      "verified": true,
+      "sortOrder": 6,
+      "photoPlaceholder": "zainab-ahmad-abba.jpg"
+    },
+    {
+      "name": "Rabiu Sani Muhammad",
+      "role": "IT Department",
+      "note": "Keeping the systems behind AJIYA Urban Rise running smoothly and securely.",
+      "verified": true,
+      "sortOrder": 7,
+      "photoPlaceholder": "rabiu-sani-muhammad.jpg"
+    },
+    {
+      "name": "Grace Isaac",
+      "role": "Marketing & Strategy",
+      "note": "Shaping how AJIYA Urban Rise tells its story and reaches the right people.",
+      "verified": true,
+      "sortOrder": 8,
+      "photoPlaceholder": "grace-isaac.jpg"
+    },
+    {
+      "name": "Sameer Abdulrahman Babayo",
+      "role": "Admin Officer",
+      "note": "Keeping the day-to-day operations of AJIYA Urban Rise organized and on track.",
+      "verified": true,
+      "sortOrder": 9,
+      "photoPlaceholder": "sameer-abdulrahman-babayo.jpg"
+    }
+  ]
+}

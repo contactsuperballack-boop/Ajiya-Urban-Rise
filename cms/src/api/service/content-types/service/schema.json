@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": "AJIYA's five core service lines (Development, Sales, Investment, Management, Construction)."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "index": {
+      "type": "string",
+      "description": "Display index, e.g. \"01\""
+    },
+    "cue": {
+      "type": "string",
+      "description": "Short homepage teaser, e.g. \"Opportunity → place\""
+    },
+    "shortDescription": {
+      "type": "string",
+      "required": true,
+      "description": "One-line summary shown on the homepage services list card"
+    },
+    "intro": {
+      "type": "string",
+      "required": true,
+      "description": "One-line summary used as the service detail page hero subhead"
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "points": {
+      "type": "json",
+      "description": "Array of short capability strings shown as feature tiles"
+    },
+    "sortOrder": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

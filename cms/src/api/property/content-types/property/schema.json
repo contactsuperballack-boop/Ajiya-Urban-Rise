@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": "Curated land, residential, and commercial listings shown on the Properties page."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["Land", "Residential", "Commercial", "Investment"],
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "priceGuide": {
+      "type": "decimal",
+      "required": true,
+      "description": "Indicative starting price in millions (NGN), for discovery only — not a binding quote"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "features": {
+      "type": "json",
+      "description": "Array of short feature strings, e.g. [\"Gated estate\", \"C of O\", \"24/7 power\"]"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"],
+      "required": true
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"],
+      "description": "Additional photos shown on the property detail page, beyond the main image"
+    },
+    "size": {
+      "type": "string",
+      "description": "Land size or floor area, e.g. \"300sqm\" — optional, since not every listing (e.g. a general category conversation-starter) has one specific size"
+    },
+    "bedrooms": {
+      "type": "integer",
+      "description": "Number of bedrooms, where applicable (not used for land)"
+    },
+    "availabilityStatus": {
+      "type": "enumeration",
+      "enum": ["Available", "Limited Units", "Reserved", "Sold Out"],
+      "default": "Available"
+    },
+    "documentationStatus": {
+      "type": "string",
+      "description": "Title/documentation trust marker, e.g. \"FCDA Approved \u00b7 Right of Occupancy (RofO)\""
+    },
+    "paymentInfo": {
+      "type": "text",
+      "description": "Payment plan / terms summary shown on the property detail page"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "properties",
+      "description": "Optional link if this property belongs to a specific development"
+    }
+  }
+}

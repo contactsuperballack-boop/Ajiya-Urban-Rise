@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.github
+server/data
+*.log
+.env
+.env.*
+!.env.example
+cms
+e2e
+playwright-report
+test-results
+.DS_Store

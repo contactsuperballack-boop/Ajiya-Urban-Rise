@@ -1,0 +1,79 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # allows manually triggering a re-deploy of the current main, e.g. for rollback
+
+jobs:
+  build-and-push:
+    name: Build and push image
+    runs-on: ubuntu-latest
+    # Not gated on the CI workflow directly — GitHub Actions doesn't support cross-workflow
+    # "needs". Branch protection on main (requiring the CI workflow to pass before merge) is
+    # what actually keeps unvetted code out of this workflow.
+    outputs:
+      image_tag: ${{ steps.meta.outputs.image_tag }}
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Compute image tag
+        id: meta
+        run: echo "image_tag=ghcr.io/${{ github.repository }}:${{ github.sha }}" >> "$GITHUB_OUTPUT"
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ steps.meta.outputs.image_tag }}
+            ghcr.io/${{ github.repository }}:staging-latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  deploy-staging:
+    name: Deploy to staging
+    runs-on: ubuntu-latest
+    needs: build-and-push
+    environment: staging # a GitHub Environment named "staging" — create it under repo Settings
+    steps:
+      - name: Deploy image to staging
+        run: |
+          echo "TODO: invoke the actual staging deploy here."
+          echo "Image: ${{ needs.build-and-push.outputs.image_tag }}"
+          echo "Concretely, this is usually either:"
+          echo "  (a) an SSH step that runs 'docker pull <image> && docker compose up -d' on the staging host, or"
+          echo "  (b) a webhook/API call to whatever platform hosts staging (Render, Fly.io, Railway, ECS, etc.)"
+          echo "Left as a placeholder because this repo has no information about the actual hosting target."
+
+  deploy-production:
+    name: Deploy to production
+    runs-on: ubuntu-latest
+    needs: deploy-staging
+    environment: production # a GitHub Environment named "production" with required reviewers
+    # configured under repo Settings → Environments — this is what makes production deploys
+    # require a human approval click before this job runs, satisfying "production deployment
+    # must be reversible" together with the rollback note below.
+    steps:
+      - name: Deploy image to production
+        run: |
+          echo "TODO: invoke the actual production deploy here — same shape as staging above,"
+          echo "pointed at the production host/service instead."
+          echo "Image: ${{ needs.build-and-push.outputs.image_tag }}"
+
+      - name: Rollback instructions (manual, documented here for visibility)
+        run: |
+          echo "Every image is tagged with its git SHA (see build-and-push above), so rolling"
+          echo "back means re-running this workflow (workflow_dispatch) from main pointed at a"
+          echo "previous commit, OR manually deploying ghcr.io/${{ github.repository }}:<previous-sha>"
+          echo "against whatever deploy mechanism fills the TODO above."

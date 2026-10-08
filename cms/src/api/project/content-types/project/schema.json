@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": "AJIYA development projects, e.g. Signature Estate, Urban Rise Estate."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "description": "Display index, e.g. \"01\""
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["Residential", "Commercial", "Mixed-Use", "Land"],
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["Planning", "Development", "Construction", "Completed"],
+      "required": true,
+      "default": "Planning"
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "eyebrow": {
+      "type": "string",
+      "description": "Short label shown above the project title, e.g. \"A place to begin\""
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"],
+      "required": true
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "sortOrder": {
+      "type": "integer",
+      "default": 0,
+      "description": "Lower numbers appear first on the Projects listing"
+    },
+    "documentationStatus": {
+      "type": "string",
+      "description": "Title/documentation trust marker shown on project cards and detail pages, e.g. \"FCDA Approved \u00b7 Right of Occupancy (RofO)\""
+    },
+    "units": {
+      "type": "json",
+      "description": "Array of available unit types for this project, e.g. [{\"type\": \"Semi detached\", \"size\": \"300sqm\", \"price\": \"\u20a64.5m\"}] — size is optional per unit."
+    },
+    "deliveryTimeline": {
+      "type": "string",
+      "description": "Expected delivery/completion timing shown on the project detail page, e.g. \"Phase 1 delivery: Q4 2026\" — leave blank until a real date is confirmed."
+    },
+    "landmarks": {
+      "type": "json",
+      "description": "Array of short strings naming real nearby landmarks/amenities, e.g. [\"10 minutes from the airport expressway\"] — only ever real, verified locations; never a placeholder guess."
+    },
+    "properties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::property.property",
+      "mappedBy": "project"
+    },
+    "seoDescription": {
+      "type": "text",
+      "maxLength": 160,
+      "description": "Used for meta description / social previews"
+    }
+  }
+}

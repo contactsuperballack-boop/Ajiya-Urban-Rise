@@ -1,0 +1,65 @@
+<!-- Concrete & Canopy style reminder: the HTML shell carries the warm editorial type pairing and the rising-line AJIYA mark. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1d4a3a" />
+    <meta name="description" content="AJIYA Urban Rise creates property and investment opportunities across Nigeria’s evolving urban landscape." />
+    <link rel="canonical" href="https://ajiyaurbanrise.com/" />
+    <!-- Static baseline social-preview tags. This is a client-rendered SPA with no server-side
+         rendering, so these are effectively what every shared link shows regardless of which
+         page was actually shared — most social-preview crawlers (Facebook, WhatsApp, Twitter/X,
+         LinkedIn, Slack) fetch raw HTML and do not execute JavaScript, unlike Googlebot. The
+         Seo component (see client/src/pages/Home.tsx) additionally updates og:title/
+         og:description client-side per page for the browser tab and for JS-executing crawlers,
+         but true per-page social images/descriptions would need server-side rendering or a
+         prerendering/static-generation step — worth revisiting once real traffic depends on
+         link previews looking page-specific. Replace ajiyaurbanrise.com below with the real
+         production domain before launch. -->
+    <meta property="og:site_name" content="AJIYA Urban Rise" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ajiyaurbanrise.com/" />
+    <meta property="og:title" content="AJIYA Urban Rise — Creating Opportunities. Building Lasting Value." />
+    <meta property="og:description" content="AJIYA Urban Rise creates property and investment opportunities across Nigeria’s evolving urban landscape." />
+    <meta property="og:image" content="https://ajiyaurbanrise.com/images/ajiya-hero-fallback.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="823" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AJIYA Urban Rise — Creating Opportunities. Building Lasting Value." />
+    <meta name="twitter:description" content="AJIYA Urban Rise creates property and investment opportunities across Nigeria’s evolving urban landscape." />
+    <meta name="twitter:image" content="https://ajiyaurbanrise.com/images/ajiya-hero-fallback.jpg" />
+    <link rel="icon" type="image/png" href="/images/ajiya-logo-favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Google Search Console: paste the "meta tag" verification code Search Console gives you
+         here (Settings > Ownership verification > HTML tag), or use the DNS TXT record method
+         instead (no code change needed) — see LAUNCH_READINESS_PLAN.md. -->
+    <!-- <meta name="google-site-verification" content="PASTE_CODE_HERE" /> -->
+
+    <!-- Site-wide structured data. Per-page BreadcrumbList (and Article, for insights) is
+         added dynamically by the Seo component in Home.tsx; this one block is static since it
+         describes the business as a whole, not any one page. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "AJIYA Urban Rise",
+        "url": "https://ajiyaurbanrise.com",
+        "logo": "https://ajiyaurbanrise.com/images/ajiya-logo.webp",
+        "image": "https://ajiyaurbanrise.com/images/ajiya-hero-fallback.jpg",
+        "description": "AJIYA Urban Rise creates property and investment opportunities across Nigeria\u2019s evolving urban landscape.",
+        "areaServed": { "@type": "City", "name": "Abuja", "containedInPlace": { "@type": "Country", "name": "Nigeria" } },
+        "sameAs": ["https://www.instagram.com/ajiyaurbanrise"]
+      }
+    </script>
+
+    <title>AJIYA Urban Rise</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Analytics: add your own script tag here once an analytics provider is chosen. -->
+  </body>
+</html>
